@@ -19,6 +19,7 @@
 
             <label for="sifatSurat">Sifat Surat:</label>
             <select id="sifatSurat" name="sifatSurat" required>
+		<option value="Biasa">Nota dinas</option>
                 <option value="Biasa">Biasa</option>
                 <option value="Rahasia">Rahasia</option>
                 <option value="Sangat Rahasia">Sangat Rahasia</option>
@@ -33,11 +34,13 @@
 
             <label for="kepada">Kepada:</label>
             <select id="kepada" name="kepada" required>
-                <option value="Departemen X">Departemen X</option>
-                <option value="Departemen Y">Departemen Y</option>
-                <option value="Departemen Z">Departemen Z</option>
+                <option value="Departemen X">Kapus Sishumad</option>
+                <option value="Departemen Y">Ka.sisfo</option>
+                
             </select>
-
+	<label for="perihal">Surat dari:</label>
+            <text id="suratDari" name="perihal" rows="4" required></text>
+		
             <label for="perihal">Perihal:</label>
             <textarea id="perihal" name="perihal" rows="4" required></textarea>
 
@@ -45,6 +48,7 @@
             <select id="keteranganSurat" name="keteranganSurat">
                 <option value="Penting">Penting</option>
                 <option value="Biasa">Biasa</option>
+		    <option value="Biasa">Tembusan</option>
             </select>
 
             <div class="file-upload"> <label for="masukkanFile" class="file-upload-label">Masukkan File:</label> <input type="file" id="masukkanFile" name="masukkanFile" class="file-upload-input"> </div>
